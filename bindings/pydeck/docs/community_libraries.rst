@@ -49,6 +49,9 @@ A bundle can be loaded this way if:
   own copy. The pydeck frontend exposes them as the ``deck``, ``luma`` and ``loaders`` globals,
   the same globals used by the deck.gl script bundles (``deck.gl/dist.min.js``).
 
+pydeck can also load ES modules with ``module=True``, but not the deck.gl-community ES modules
+served by CDNs such as esm.sh, which bundle their own copy of deck.gl.
+
 The same mechanism loads your own layers. See :doc:`custom_layers`.
 
 Version compatibility
